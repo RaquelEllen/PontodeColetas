@@ -1,0 +1,189 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lucida Sans'sans-serif;
+    line-height: 1.6;
+}
+.center {
+    max-width: 800px; /* Ajuste a largura máxima para 800px */
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px; /* Espaço entre os itens do menu */
+}
+/* Itens do menu */
+header .menu a {
+    text-decoration: none;
+    color: white; /* Cor branca */
+    font-size: 16px;
+    font-weight: bold; /* Deixar o texto mais destacado */
+    transition: color 0.3s;
+}
+/* Efeito ao passar o mouse sobre os itens do menu */
+header .menu a:hover {
+    color: #007bff; /* Cor de destaque ao passar o mouse */
+}
+/* Cor do fundo e espaçamento */
+header {
+    background-color: rgb(64, 99, 12);
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo */
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+header .logo img {
+    height: 100px;
+    max-width: 100%;
+}
+/* Estilo do conteúdo principal */
+main {
+    margin-top: 20px;
+}
+h1 {
+    color: #333;
+    font-size: 1.8em; /* Reduzir o tamanho do título */
+    margin-bottom: 15px;
+}
+p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+/* Destaque para os pontos de coleta */
+#pontosdecoleta {
+    background-color: rgba(172, 218, 172, 0.8); /* Fundo verde */
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+#pontosdecoleta h1 {
+    font-size: 1.8em; /* Ajustar tamanho */
+    color: black;
+}
+#pontosdecoleta p {
+    color: black;
+    font-size: 1.1em; /* Ajustar tamanho */
+}
+#pontosdecoleta ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+/* Estilo das informações dos Ecopontos */
+.ecoponto {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+}
+.ecoponto h2 {
+    color: #28a745;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.ecoponto p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.ecoponto a {
+    color: #101011;
+    text-decoration: none;
+}
+.ecoponto a:hover {
+    text-decoration: underline;
+}
+.ecoponto .mapagoogle {
+    color: blue;
+}
+/* Estilo do corpo */
+body {
+    background-image: url('../Imagens/Mundo Reciclado.jpeg'); /* Caminho para a imagem */
+    background-size: cover; /* Ajusta para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto rola */
+    color: #333; /* Cor do texto para contraste */
+}
+/* Camada com opacidade para clarear o fundo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Camada branca com opacidade para clarear */
+    z-index: -1; /* Coloca atrás do conteúdo */
+}
+/* Centraliza as imagens das seções Plástico, Metal, Vidro e Papel */
+#plastico img,
+#metal img,
+#vidro img,
+#papel img {
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção original da imagem */
+    margin-top: 20px; /* Dá um espaço acima da imagem */
+}
+/* Estilo das seções de Plástico, Metal, Vidro e Papel */
+#plastico,
+#metal,
+#vidro,
+#papel {
+    text-align: center; /* Centraliza o conteúdo das seções */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo transparente para não interferir com o fundo */
+    border-radius: 8px;
+}
+/* Caso queira controlar o tamanho da imagem nas seções, adicione limites como max-width */
+#plastico img {
+    max-width: 60%;
+}
+#metal img {
+    max-width: 60%;
+}
+#vidro img {
+    max-width: 60%;
+}
+#papel img {
+    max-width: 60%;
+}
+footer {
+    background-color: rgb(64, 99, 12);
+    color: rgb(236, 231, 231);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+footer p {
+    margin: 5px 0;
+    color: #f8f9fa;
+    text-align: center;
+}
